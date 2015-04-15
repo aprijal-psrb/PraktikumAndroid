@@ -4,13 +4,11 @@
                 android:layout_height="match_parent"
                 tools:context=".MainActivity"
                 android:orientation="vertical"
-                android:background="@color/silver">
-
-
+                android:background="@color/abc_search_url_text_normal">
 
        <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:id="@+id/imageView3"
         android:src="@drawable/steak"/>
     <TextView
@@ -18,12 +16,10 @@
         android:layout_height="wrap_content"
         android:text="@string/judul_baru"
         android:id="@+id/textView3"
-        android:layout_gravity="center"
-        android:layout_marginBottom="34dp"
-        android:layout_marginTop="50dp"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/ungu"
+        android:layout_gravity="center"
         />
 
      <Button
@@ -45,6 +41,22 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/background_button"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inputApp"
+        android:id="@+id/btnInPutApp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_button"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bmi Ap"
+        android:id="@+id/btnBmi"
+        android:layout_gravity="center_horizontal"/>
 
 
 </LinearLayout>

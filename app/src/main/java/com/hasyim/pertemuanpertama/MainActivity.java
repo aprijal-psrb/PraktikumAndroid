@@ -17,11 +17,29 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         final Button btnPersamaan = (Button) findViewById(R.id.btnPersamaan);
+        final Button btnInput = (Button) findViewById(R.id.btnInPutApp);
+        final Button btnBmi = (Button)findViewById(R.id.btnBmi);
 
         btnPersamaan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(btnPersamaan.getContext(), PersamaanActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnInput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(btnInput.getContext(), InputActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnBmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(btnBmi.getContext(), BmiActivity.class);
                 startActivity(i);
             }
         });
