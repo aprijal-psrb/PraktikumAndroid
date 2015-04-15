@@ -34,12 +34,14 @@
 
     <EditText
         android:id="@+id/editText1"
+        android:hint="Centimeter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView2"
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignParentRight="true"
-        android:ems="10" />
+        android:ems="10"
+        android:inputType="number"/>
 
     <TextView
         android:id="@+id/textView3"
