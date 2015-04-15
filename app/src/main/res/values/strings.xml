@@ -8,7 +8,7 @@
     <string name="judul_baru">SELAMAT DATANG Broo!!</string>
     <string name="menu2">Menu 2</string>
     <string name="menu3">Menu 3</string>
-
+    <string name="bckColor">Background Color : </string>
     <color name="ungu">#9C27B0</color>
     <color name="silver">#9E9E9E</color>
     <color name="putih">#ffffff</color>
@@ -25,6 +25,6 @@
     <string name="btnPrint">Print Bro!!!</string>
     <string name="title_activity_contoh">ContohActivity</string>
     <string name="title_activity_uts">UtsActivity</string>
-    <string name="title_activity_bmi">BmiActivity</string>
+    <string name="title_activity_bmi">BMI Activity</string>
 
 </resources>
