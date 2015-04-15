@@ -26,7 +26,7 @@
         android:hint="Masukkan Inputan"
         android:textColor="@color/putih"
         android:textColorHint="@color/putih"
-        />
+        android:inputType="textCapCharacters"/>
 
     <Button
         android:id="@+id/btnPrint"
@@ -41,16 +41,15 @@
 
     <TextView
         android:id="@+id/tvHasil"
-        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnPrint"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="109dp"
-        android:text=""
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/putih"
         android:textSize="70sp"
 
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btnPrint"/>
 
 </RelativeLayout>
