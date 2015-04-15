@@ -40,7 +40,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/edtA"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:inputType="numberSigned|numberDecimal"/>
 
     <EditText
         android:layout_width="250dp"
@@ -48,14 +49,16 @@
         android:id="@+id/edtB"
         android:layout_below="@+id/edtA"
         android:layout_alignLeft="@+id/edtA"
-        android:layout_alignStart="@+id/edtA"/>
+        android:layout_alignStart="@+id/edtA"
+        android:inputType="numberSigned|numberDecimal"/>
 
     <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/edtC"
         android:layout_below="@+id/edtB"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:inputType="numberSigned|numberDecimal"/>
 
     <Button
         android:layout_width="match_parent"
@@ -96,7 +99,8 @@
         android:layout_alignLeft="@+id/edtC"
         android:layout_alignStart="@+id/edtC"
         android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"/>
+        android:layout_marginStart="28dp"
+        android:editable="false"/>
 
     <EditText
         android:layout_width="250dp"
@@ -104,24 +108,23 @@
         android:id="@+id/edtHasilX2"
         android:layout_alignBottom="@+id/TxtHasilX2"
         android:layout_alignLeft="@+id/edtHasilX1"
-        android:layout_alignStart="@+id/edtHasilX1"/>
+        android:layout_alignStart="@+id/edtHasilX1"
+        android:editable="false"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/tvHasil"
-        android:layout_below="@+id/edtHasilX2"
-        android:layout_alignLeft="@+id/edtHasilX2"
-        android:layout_alignStart="@+id/edtHasilX2"
-        android:layout_marginTop="47dp"/>
+        android:layout_below="@+id/TxtHasilX2"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Keterangan"
         android:id="@+id/tvKet"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/tvHasil"
         android:layout_centerHorizontal="true"/>
 
