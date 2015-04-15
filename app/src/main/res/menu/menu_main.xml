@@ -5,18 +5,8 @@
     <item android:id="@+id/action_settings"
           android:title="@string/action_settings"
           android:orderInCategory="100"
-          app:showAsAction="never"/>
-
-    <item android:id="@+id/action_1"
-          android:title="@string/menu2"
-          android:orderInCategory="100"
-          app:showAsAction="never"/>
-
-    <item android:id="@+id/action_2"
-          android:title="@string/menu3"
-          android:orderInCategory="100"
-          app:showAsAction="never"/>
-
+          app:showAsAction="ifRoom"
+          android:icon="@drawable/ic_action_settings"/>
 
 
 </menu>
