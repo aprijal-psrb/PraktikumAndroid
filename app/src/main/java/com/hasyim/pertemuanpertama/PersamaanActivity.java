@@ -52,8 +52,7 @@ public class PersamaanActivity extends ActionBarActivity {
                     x2 = (-B + Math.sqrt(tempHasil)) / (2 * A);
                     hasilX1.setText(String.valueOf(x1));
                     hasilX2.setText(String.valueOf(x2));
-                    tvHasil.setText(" x1 = " + String.valueOf(x1) + " +1n"
-                            + " x2 = " + String.valueOf(x2));
+                    tvHasil.setText(" x1 = " + String.valueOf(x1) + "\n"+" x2 = " + String.valueOf(x2));
                 }
             }
 
