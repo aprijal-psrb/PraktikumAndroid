@@ -16,8 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PersamaanActivity" />
-        <activity android:name=".InputActivity" />
+        <activity android:name=".PersamaanActivity" android:label="@string/persamaan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hasyim.pertemuanpertama.MainActivity" />
+        </activity>
+        <activity android:name=".InputActivity" android:label="@string/inputApp">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hasyim.pertemuanpertama.MainActivity" />
+        </activity>
         <activity
             android:name=".ContohActivity"
             android:label="@string/title_activity_contoh" >
@@ -29,6 +37,15 @@
         <activity
             android:name=".BmiActivity"
             android:label="@string/title_activity_bmi" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hasyim.pertemuanpertama.MainActivity" />
+        </activity>
+        <activity android:name=".SettingActivity"
+                  android:label="@string/action_settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hasyim.pertemuanpertama.MainActivity" />
         </activity>
     </application>
 
