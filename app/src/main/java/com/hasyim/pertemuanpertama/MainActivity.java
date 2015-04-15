@@ -1,20 +1,32 @@
 package com.hasyim.pertemuanpertama;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 
 public class MainActivity extends ActionBarActivity {
+    public static SharedPreferences color;
+    public static SharedPreferences.Editor colorEditor;
+    public static LinearLayout mainBackG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        color = getApplicationContext().getSharedPreferences("color", MODE_PRIVATE);
+        colorEditor = color.edit();
+
+        mainBackG = (LinearLayout)findViewById(R.id.mainBackground);
+        mainBackG.setBackgroundColor(color.getInt("bckColor",0));
 
         final Button btnPersamaan = (Button) findViewById(R.id.btnPersamaan);
         final Button btnInput = (Button) findViewById(R.id.btnInPutApp);
@@ -44,7 +56,6 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-
     }
 
 
@@ -64,6 +75,8 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent setting = new Intent(getApplicationContext(),SettingActivity.class);
+            startActivity(setting);
             return true;
         }
 
